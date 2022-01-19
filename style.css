@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-light: #f5deb370;
+	--color-dark: #1d1d02ef;
+	--color-main: ;
+	--ff-primary: "Lora", serif;
+	/* --ff-secondary: ; */
+	/* --fs-h1: ;
+	--fs-h2: ; */
+}
+
+section {
+	padding: 5em, 2em;
+	/* padding-top: 50px; */
+}
+
+@media (min) {
+}
+
+.home {
+	text-align: center;
+}
+
+.about {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+	.about {
+		display: grid;
+	}
+}
+
+.projects {
+	background-color: var(--color-dark);
+	color: var(--color-light);
+	text-align: center;
+}
+
+.portfolio {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.contacts {
+	text-align: center;
+	padding: 2.5em 0;
+	font-size: 3vh;
+}
+
+.social-list {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 1em 0;
+	padding: 0;
+}
+
+.social-list__item {
+	margin: 0 1em;
+}
+
+#topBtn {
+	display: none;
+	position: fixed;
+	z-index: 99;
+	border-radius: 10px;
+	background-color: #f6eabe;
+	bottom: 20px;
+	right: 30px;
+}
+
+/* light line that comes after title */
+::after {
+	content: "";
+	display: block;
+	width: 3em;
+	height: 1px;
+	margin: 0.5em auto 1em;
+	background: var(--color-light);
+	opacity: 0.25;
+}

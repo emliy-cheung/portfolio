@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 :root {
@@ -46,6 +47,10 @@ section {
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 	max-width: 1000px;
 	margin: 0 auto;
+}
+
+.portfolio__item {
+	border: 1px solid black;
 }
 
 .contacts {

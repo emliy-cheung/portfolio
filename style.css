@@ -29,11 +29,6 @@ section {
 	height: 100vh;
 }
 
-img {
-	display: block;
-	max-width: 50%;
-}
-
 .section__title {
 	font-size: 3em;
 	height: 1em;
@@ -53,6 +48,25 @@ img {
 	height: 100vh;
 	max-width: 1000px;
 	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.about__container {
+	display: flex;
+	margin-top: 2vh;
+}
+
+.section__text {
+	width: 50%;
+	font-family: var(--ff-primary);
+	font-size: 1.5em;
+	line-height: 1.8em;
+}
+
+img {
+	/* display: block; */
+
+	max-width: 50%;
 }
 
 /* @media (min-width: 600px) {

@@ -63,9 +63,7 @@ section {
 	line-height: 1.8em;
 }
 
-img {
-	/* display: block; */
-
+.myPic {
 	max-width: 50%;
 }
 
@@ -89,8 +87,30 @@ img {
 	margin: 0 auto;
 }
 
+.portfolio__img {
+}
+
 .portfolio__item {
-	/* width: 50vw; */
+	position: relative;
+	border: 2px solid grey;
+}
+
+.portfolio__caption {
+	position: absolute;
+	top: 20%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	font-size: 5vh;
+}
+
+.portfolio__item:hover .portfolio__img {
+	opacity: 0.15;
+}
+
+.portfolio__item:hover .portfolio__caption {
+	opacity: 1;
 }
 
 .contacts {

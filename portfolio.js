@@ -6,3 +6,7 @@
 //     document.body.scrollIntoView({behavior: "smooth"});
 // };
 
+$(document).ready(function() {
+    $(".portfolio__item").hover(showProjectInfo, hideProjectInfo);
+})
+

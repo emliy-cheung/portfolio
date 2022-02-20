@@ -76,26 +76,28 @@ img {
 } */
 
 .projects {
-	background-color: var(--color-dark);
-	color: white;
+	background-color: ;
+	color: black;
 	text-align: center;
+	padding-top: 50px;
 }
 
 .portfolio {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 	max-width: 1000px;
 	margin: 0 auto;
 }
 
 .portfolio__item {
-	border: 1px solid black;
+	/* width: 50vw; */
 }
 
 .contacts {
 	text-align: center;
 	padding: 2.5em 0;
 	font-size: 3vh;
+	padding-top: 50px;
 }
 
 .social-list {

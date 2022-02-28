@@ -222,10 +222,12 @@ hr {
 }
 
 .portfolio__item {
+	height: 60vh;
 	position: relative;
-	box-shadow: 0.5em 0.5em grey;
+	/* box-shadow: 0.5em 0.5em grey; */
 	margin: 2em 2em;
-	border: 2px solid grey;
+
+	border-radius: 5px;
 }
 
 .portfolio__caption {
@@ -237,7 +239,12 @@ hr {
 	right: 0;
 	opacity: 0;
 	font-size: 2em;
+	padding: 0 2em;
 	transition: all 0.3s cubic-bezier(0.42, 0, 1, 0.38);
+}
+
+.portfolio__item:hover {
+	border: 4px solid aquamarine;
 }
 
 .portfolio__item:hover .portfolio__img {
@@ -251,23 +258,24 @@ hr {
 .btn {
 	width: 30%;
 	height: 10%;
-	margin-top: 10vh;
+	margin-top: 8vh;
 	padding-bottom: 1.8em;
 	text-align: center;
 	font-size: 0.7em;
-	color: black;
-	background-color: aquamarine;
-	border: 1px solid rgba(32, 32, 32, 0.226);
+	color: rgba(0, 0, 0, 0.733);
+	background-color: rgba(127, 255, 212, 0.856);
+	/* border: 1px solid rgba(32, 32, 32, 0.226); */
 }
 
 .contacts {
 	text-align: center;
-	padding: 2.5em 0;
+
 	font-size: 3vh;
-	padding-top: 50px;
-	height: 20vh;
-	/* background-color: rgba(185, 242, 255, 0.5); */
-	background-color: aquamarine;
+	padding: 0.6em 0;
+
+	margin: 0;
+	line-height: 0.5em;
+	background-color: rgb(104, 224, 184);
 }
 
 .social-list {
@@ -280,6 +288,17 @@ hr {
 
 .social-list__item {
 	margin: 0 1em;
+}
+
+.social-list__item i {
+	/* color: rgb(71, 71, 71); */
+	color: rgb(243, 239, 239);
+	font-size: 1.4em;
+}
+
+.footnote {
+	color: rgba(107, 104, 104, 0.753);
+	font-size: 0.8em;
 }
 
 #topBtn {
